@@ -52,7 +52,7 @@ while svar != 9:
     if svar = 2:
 
         #liður 3 - Skæri, blað, steinn
-    if svar = 3:
+    if svar = 3:                #laga þetta seinna
         listi = ["blað", "skæri", "steinn"]
         tölva = listi[randint(0,2)]
         notandi = False
