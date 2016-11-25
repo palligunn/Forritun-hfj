@@ -1,5 +1,9 @@
 #hópverkefni 2
 #jóhann Chanse Sigurðsson og Páll Gunnar Svansson
+import random
+from random import randint
+from random import sample
+from random import randrange
 while svar != 9:
     print ("1.Bílar")
     print ("2.Samlagning")
