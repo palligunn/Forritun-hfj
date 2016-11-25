@@ -14,6 +14,39 @@ while svar != 9:
 
         #liður 1 - Bílar
     if svar = 1:
+        print("=-1-=")
+        bilamenn = int(input("Sláðu inn fjölda farþega : "))
+        print(bilamenn,"eru skráð.")
+        if bilamenn < 5:
+            print("Því miður eru ekki nógu margir skráðir, hætt er við ferðina.") 
+        else:
+            biltalning = bilamenn
+            
+            bilkall = 0
+            bilar = 0
+            bilsidast = 0
+            for set in range(1,biltalning+1):
+                bilkall = bilkall + 1
+                if bilkall == 5:
+                    bilkall = 0
+                    bilar = bilar + 1
+                    bilamenn = bilamenn - 5
+                if bilamenn < 5 and bilsidast == 0: #sidasti billin
+                    if bilamenn == 4:
+                        bilar = bilar + 1
+                        bilsidast = 4
+                    if bilamenn == 3:
+                        bilar = bilar + 1
+                        bilsidast = 3
+                    if bilamenn == 2:
+                        bilar = bilar + 1
+                        bilsidast = 2
+                    if bilamenn == 1:
+                        bilsidast = 1
+                        bilar = bilar + 1
+        print("Fjöldi bíla sem þarf:",bilar)
+        print("Fjöldi í síðasta bílnum:",bilsidast)
+        print("=-1-=")
 
         #liður 2 - Samlagning
     if svar = 2:
