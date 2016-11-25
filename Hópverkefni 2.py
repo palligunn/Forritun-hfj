@@ -1,9 +1,5 @@
 #hópverkefni 2
 #jóhann Chanse Sigurðsson og Páll Gunnar Svansson
-import random
-from random import randint
-from random import sample
-from random import randrange
 while svar != 9:
     print ("1.Bílar")
     print ("2.Samlagning")
@@ -54,6 +50,31 @@ while svar != 9:
 
         #liður 2 - Samlagning
     if svar = 2:
+        print("=-2-=")
+        samem = 0
+        samlagntala = int(input("Sláðu inn tölu : "))
+        #if samlagntala < :
+         #   for msam in range(samlagntala,0,-1): #minus lagning
+          #      print(msam)
+           #     print("yay") #(╯°□°）╯︵ ┻━┻
+                
+
+        if samlagntala > 0:
+            for psam in range(1,samlagntala+1): #plus lagning
+                print(psam)
+                samem = samem + psam
+       
+        elif samlagntala == 0:
+            print("Takk fyrir að nota forritið okkar") #núll
+        else:
+            for msam in range(samlagntala,0): #minus lagning
+                print(msam)
+                samem = samem + msam
+            
+        print("===")
+        print(samem)
+        print("===")
+        print("=-2-=")
 
         #liður 3 - Skæri, blað, steinn
     if svar = 3:                #laga þetta seinna
