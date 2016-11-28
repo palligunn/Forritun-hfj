@@ -2,6 +2,7 @@ import random
 from random import randrange
 #hópverkefni 2
 #jóhann Chanse Sigurðsson og Páll Gunnar Svansson
+svar = 0
 while svar != 9:
     print ("1.Bílar")
     print ("2.Samlagning")
