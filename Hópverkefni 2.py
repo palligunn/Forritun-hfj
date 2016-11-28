@@ -14,7 +14,7 @@ while svar != 9:
     print ("8.Byggingaupplýsingar úr hópverkefni 1")
     print ("9.Hætta")
     print (" ")
-
+    svar = int(input("Veldu númer :"))
         #liður 1 - Bílar
     if svar == 1:
         print("=-1-=")
@@ -176,18 +176,36 @@ while svar != 9:
         print(texti)
 
         #liður 5 - Heiltölur
-    if svar = 5:
+    if svar == 5:
+        tala_1 = []
+        tala_2 = []
+        tala_3 = []
+        tala_4 = []
+        tala_5 = []
+        tala_6 = []
+        tala_7 = []
+        for i in range(1):
+            tala_1 = (randrange(1,101))
+        for i in range(1):
+            tala_2 = (randrange(1,101))
+        for i in range(1):
+            tala_3 = (randrange(1,101))
+        for i in range(1):
+            tala_4 = (randrange(1,101))
+        for i in range(1):
+            tala_5 = (randrange(1,101))
+        for i in range(1):
+            tala_6 = (randrange(1,101))
+        for i in range(1):
+            tala_7 = (randrange(1,101))    
+        print (("tölurnar sem þú fékkst eru: "), tala_1, tala_2, tala_3, tala_4, tala_5, tala_6, tala_7)
+        print ("stærðsta talan er : ",(max(tala_1, tala_2, tala_3, tala_4, tala_5, tala_6, tala_7)))
+        print ("minnsta talan er: ", (min(tala_1, tala_2, tala_3, tala_4, tala_5, tala_6, tala_7)))
+        meðaltal =(int(tala_1 + tala_2 + tala_3 + tala_4 + tala_5 + tala_6 + tala_7/7))
+        print ("meðaltalið á tölunum er: ", meðaltal)
+        print (" ")
 
-        #liður 6 - Teningaspilið Craps
-    if svar = 6:
-
-        #liður 7 - Teningakast
-    if svar = 7:
-
-        #liður 8 - Byggingaupplýsingar úr hópverkefni 1
-    if svar = 8:
-
-    if svar = 9:
+    if svar == 9:
         quit()
 
-    
+
