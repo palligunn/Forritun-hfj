@@ -34,7 +34,7 @@ while svar != 9:
                     bilkall = 0
                     bilar = bilar + 1
                     bilamenn = bilamenn - 5
-                if bilamenn < 5 and bilsidast == 0: #sidasti billin
+                if bilamenn < 5 and bilsidast == 0: #sidasti billin, þarf sitt eigin "if" með meiri "if" inni svo við teljum ekki auka bíla
                     if bilamenn == 4:
                         bilar = bilar + 1
                         bilsidast = 4
@@ -70,7 +70,7 @@ while svar != 9:
         elif samlagntala == 0:
             print("Takk fyrir að nota forritið okkar") #núll
         else:
-            for msam in range(samlagntala,0): #minus lagning
+            for msam in range(samlagntala,0): #minus lagning mk2, þurfti að fara í "else" til að virka.
                 print(msam)
                 samem = samem + msam
             
@@ -205,6 +205,8 @@ while svar != 9:
         print ("meðaltalið á tölunum er: ", meðaltal)
         print (" ")
         
+        
+        #liður 7
     if svar == 7:
         print("=-7-=")
         countover = 0
