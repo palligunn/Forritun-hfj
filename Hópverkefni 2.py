@@ -1,3 +1,5 @@
+import random
+from random import randrange
 #hópverkefni 2
 #jóhann Chanse Sigurðsson og Páll Gunnar Svansson
 while svar != 9:
