@@ -14,7 +14,7 @@ while svar != 9:
     print ("8.Byggingaupplýsingar úr hópverkefni 1")
     print ("9.Hætta")
     print (" ")
-    svar = int(input("sláðu inn tölu"))
+    svar = int(input("Veldu númer :"))
         #liður 1 - Bílar
     if svar == 1:
         print("=-1-=")
