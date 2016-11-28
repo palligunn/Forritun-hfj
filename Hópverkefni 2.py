@@ -199,7 +199,7 @@ while svar != 9:
         for i in range(1):
             tala_7 = (randrange(1,101))    
         print (("tölurnar sem þú fékkst eru: "), tala_1, tala_2, tala_3, tala_4, tala_5, tala_6, tala_7)
-        print ("stærðsta talan er : ",(max(tala_1, tala_2, tala_3, tala_4, tala_5, tala_6, tala_7)))
+        print ("stærsta talan er : ",(max(tala_1, tala_2, tala_3, tala_4, tala_5, tala_6, tala_7)))
         print ("minnsta talan er: ", (min(tala_1, tala_2, tala_3, tala_4, tala_5, tala_6, tala_7)))
         meðaltal =(int(tala_1 + tala_2 + tala_3 + tala_4 + tala_5 + tala_6 + tala_7/7))
         print ("meðaltalið á tölunum er: ", meðaltal)
