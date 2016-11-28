@@ -204,6 +204,37 @@ while svar != 9:
         meðaltal =(int(tala_1 + tala_2 + tala_3 + tala_4 + tala_5 + tala_6 + tala_7/7))
         print ("meðaltalið á tölunum er: ", meðaltal)
         print (" ")
+        
+    if svar == 7:
+        print("=-7-=")
+        countover = 0
+        dicelist = []
+        for throw in range(1,101):
+            dice1 = randrange(1,7)
+            dice2 = randrange(1,7)
+            dicetotal = dice1+dice2
+            print("Teningur 1 =",dice1)
+            print("Teningur 2 =",dice2)
+            print("samtals :",dicetotal)
+            print("Þessi samtala verður sett í listan sem kast",throw)
+            dicelist.append(dicetotal);
+            countover = countover + dicetotal
+        print(dicelist)
+        print("===")
+        print(sorted(dicelist))
+        print("===")
+        finalcountover = countover/100
+        print("Heildarsumma :",finalcountover,"Líkindi segja að það er alltaf nálegt 7 ef þú hendir tvo teninga")
+        print("===")
+        lucky7 = dicelist.count(7)
+        hit3 = dicelist.count(3)
+        crit12 = dicelist.count(12)
+        print("Hve oft summa kastanna var 7:",lucky7)
+        print("===")
+        print("Hve oft summa kastanna var 3:",hit3)
+        print("===")
+        print("Hve oft summa kastanna var 12:",crit12)
+        print("=-7-=")
 
     if svar == 9:
         quit()
