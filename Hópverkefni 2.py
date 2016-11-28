@@ -204,7 +204,9 @@ while svar != 9:
         meðaltal =(int(tala_1 + tala_2 + tala_3 + tala_4 + tala_5 + tala_6 + tala_7/7))
         print ("meðaltalið á tölunum er: ", meðaltal)
         print (" ")
-        if svar == 6:
+        
+        #Liður 6
+    if svar == 6:
         crapstensity = 0
         print("=-6-=")
         crapsdice1 = randrange(1,7) #d6 teningar
