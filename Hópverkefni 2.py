@@ -112,8 +112,8 @@ while svar != 9:
         texti = texti.replace('á','*')
         texti = texti.replace('Á','*')
         texti = texti.replace('b','*')
-        texti = texti.replace('B','*')
-        texti = texti.replace('c','*')
+        texti = texti.replace('B','*')#hér er verið að taka allar stafina út úr textanum sem eiga ekki að vera
+        texti = texti.replace('c','*')#við fundum enga betri aðferð að þessu
         texti = texti.replace('C','*')
         texti = texti.replace('d','*')
         texti = texti.replace('D','*')
@@ -178,14 +178,14 @@ while svar != 9:
         #liður 5 - Heiltölur
     if svar == 5:
         tala_1 = []
-        tala_2 = []
+        tala_2 = []#max() og min() vildi ekki virka þar sem að ég notaði random
         tala_3 = []
         tala_4 = []
         tala_5 = []
         tala_6 = []
         tala_7 = []
         for i in range(1):
-            tala_1 = (randrange(1,101))
+            tala_1 = (randrange(1,101))#þetta prentar út 7 random tölur og velur síðan hæðstu, lægðstu og reiknar út meðaltal þeirra
         for i in range(1):
             tala_2 = (randrange(1,101))
         for i in range(1):
