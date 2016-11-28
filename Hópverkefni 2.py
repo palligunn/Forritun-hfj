@@ -13,7 +13,7 @@ while svar != 9:
     print (" ")
 
         #liður 1 - Bílar
-    if svar = 1:
+    if svar == 1:
         print("=-1-=")
         bilamenn = int(input("Sláðu inn fjölda farþega : "))
         print(bilamenn,"eru skráð.")
@@ -49,7 +49,7 @@ while svar != 9:
         print("=-1-=")
 
         #liður 2 - Samlagning
-    if svar = 2:
+    if svar == 2:
         print("=-2-=")
         samem = 0
         samlagntala = int(input("Sláðu inn tölu : "))
@@ -77,35 +77,34 @@ while svar != 9:
         print("=-2-=")
 
         #liður 3 - Skæri, blað, steinn
-    if svar = 3:                #laga þetta seinna
-        listi = ["blað", "skæri", "steinn"]
-        tölva = listi[randint(0,2)]
-        notandi = False
-        while notandi == False:
-            notandi = input("skæri, blað, steinn? [skrifaðu orðinn eins og stendur hér] ")
-        if notandi == tölva:
-            print ("jafntefli")
-        elif notandi == "steinn":
-            if tölva == "blað":
-                print ("Þú tapaðir")
-            else:
-                print ("Þú vannst")
-        elif notandi == "blað":
-            if tölva == "skæri":
-                print ("þú tapaðir")
+    if svar == 3:                #laga þetta seinna #og ég lega það núna
+        print("=-3-=")
+        gameturns = 0
+        pmove = 0
+        pwin = 0
+        cpuwin = 0
+        gamedraw = 0
+        while pmove != 4:
+            print("/1. Skæri 2. Blað 3. Steinn 4. Hætta/")
+            pmove = int(input("Veldu 1, 2, 3 eða 4: "))
+            if pmove != 4:
+                cpumove = randrange(1,4) #forritið velur sitt eigið numer
+                gameturns = gameturns +1
+                if pmove == cpumove:
+                    print("Jafntefli.")
+                    gamedraw = gamedraw + 1
+                elif pmove == 3 and cpumove == 1 or pmove == 2 and cpumove == 3 or pmove == 1 and cpumove == 2:
+                    print("Notandi vann!")
+                    pwin = pwin + 1
                 else:
-                    print ("Þú vannst")
-        elif notandi == "skæri":
-            if tölva == "steinn":
-                print ("þú tapaðir")
-            else:
-                print ("þú vannst")
-        else:
-            print ("þú skrifaðir ekki rétt")
-        notandi = False
-        tölva = listi[randint(0,2)]
+                    print("Notandi tapar.")
+                    cpuwin = cpuwin + 1
+                print("Notandi valdi",pmove,"á móti",cpumove)
+                print("-----")
+        print("Sigur =",pwin,"Töp =",cpuwin,"Jafntefli =",gamedraw,"Lengd leiks :",gameturns)
+        print("=-3-=")
         #liður 4 - Strengur
-    if svar = 4:
+    if svar == 4:
         texti = input("Sláðu inn Texta: ")
         texti = texti.replace('á','*')
         texti = texti.replace('Á','*')
