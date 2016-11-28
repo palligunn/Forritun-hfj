@@ -14,7 +14,7 @@ while svar != 9:
     print ("8.Byggingaupplýsingar úr hópverkefni 1")
     print ("9.Hætta")
     print (" ")
-    svar = int(input("Veldu númer :"))
+    svar = int(input("VALMYND: Veldu númer :"))
         #liður 1 - Bílar
     if svar == 1:
         print("=-1-=")
@@ -204,7 +204,35 @@ while svar != 9:
         meðaltal =(int(tala_1 + tala_2 + tala_3 + tala_4 + tala_5 + tala_6 + tala_7/7))
         print ("meðaltalið á tölunum er: ", meðaltal)
         print (" ")
-        
+        if svar == 6:
+        crapstensity = 0
+        print("=-6-=")
+        crapsdice1 = randrange(1,7) #d6 teningar
+        crapsdice2 = randrange(1,7)
+        crapstotal = crapsdice1 + crapsdice2
+        print("Þú fékk",crapsdice1,"og",crapsdice2,"í kastinnu.")
+        print("Summa:",crapstotal)
+        if crapstotal == 7 or crapstotal == 11:
+            print("Þú vinnur strax.")
+        else:
+            if crapstotal == 2 or crapstotal == 3 or crapstotal == 12:
+                print("Craps, tapar og húsið vinnur.")
+            else:
+                crapstensity = 9001 #the suspense is real ( ﾟoﾟ)
+                print("Þú fékk",crapstotal,"í fyrstu kasti svo við rúllum meiri teninga.")
+                while crapstensity != 0:
+                    extradice1 = randrange(1,7)
+                    extradice2 = randrange(1,7)
+                    print("%%%") #Léttara að lesa textan á meðan Craps forritið keyrir.
+                    extratotal = extradice1+extradice2
+                    print("Þú fékk",extradice1,"+",extradice2,'=',extratotal)
+                    if extratotal == crapstotal:
+                        crapstensity = 0
+                        print("Þú vinnur!!!")
+                    elif extratotal == 7:
+                        crapstensity = 0 #sett á núll til að stöðva leikin
+                        print("Seven-out, Þú tapar.")
+        print("=-6-=")
         
         #liður 7
     if svar == 7:
