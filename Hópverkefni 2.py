@@ -48,7 +48,8 @@ while svar != 9:
                         bilsidast = 1
                         bilar = bilar + 1
         print("Fjöldi bíla sem þarf:",bilar)
-        print("Fjöldi í síðasta bílnum:",bilsidast)
+        if bilsidast != 0:
+            print("Fjöldi í síðasta bílnum:",bilsidast)
         print("=-1-=")
 
         #liður 2 - Samlagning
